@@ -19,5 +19,6 @@ namespace ariel{
             // functions
             void move(Character *enemy);
             bool slash(Character *enemy);
+            void attack(Character *tmp) override;
     };
 }

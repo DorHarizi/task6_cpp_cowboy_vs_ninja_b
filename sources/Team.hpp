@@ -4,9 +4,9 @@
 #include "Character.hpp"
 #include "Cowboy.hpp"
 #include "Ninja.hpp"
-#include "YoungNinja.h"
-#include "TrainedNinja.h"
-#include "OldNinja.h"
+#include "YoungNinja.hpp"
+#include "TrainedNinja.hpp"
+#include "OldNinja.hpp"
 #include "Team.hpp"
 #include <vector>
 
@@ -21,9 +21,11 @@
 
          public:
             Team(Character *leader);
+            void findNewLeader();
+            void findNewVictim(Character **victim, Team *enemyTeam);
             void add(Character *warrior);
             void attack(Team *enemyTeam);
-            bool stillAlive();
+            int stillAlive();
             string print();
             ~Team();
             Team(const Team &);

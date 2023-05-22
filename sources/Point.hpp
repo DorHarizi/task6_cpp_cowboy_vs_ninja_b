@@ -24,7 +24,7 @@ namespace ariel
 
         // functions
         double distance(Point dest);
-        Point moveTowards(Point src, Point dest, double distance);
+        Point static moveTowards(Point src, Point dest, double distance);
         string print();
     };
 }

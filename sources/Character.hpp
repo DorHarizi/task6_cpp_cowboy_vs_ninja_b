@@ -11,23 +11,26 @@ namespace ariel{
         private:
             string name;
             Point location;
-            int numHit; 
-
+            int numOfHit;
+            bool inTeam;
 
         public:
             // constructors
-            Character(string name, Point location, int numHit);
+            Character(string name, Point location, int numOfHit);
            
-            // Getters and seters
+            // Getters and setters
             string getName();
             Point getLocation();
+            bool getInTeam();
             void setName(string name);
             void setLocation(Point location);
+            void setInTeam(bool tmp);
         
             // functions
-            bool isAlive();
-            double distance(Character element);
-            void hit(int numhit);
+            bool isAlive() const;
+            double distance(Character *element);
+            virtual void attack(Character *enemy);
+            void hit(int Hit);
             string print();
             
         };

@@ -15,10 +15,11 @@ namespace ariel{
             Cowboy(string name, Point location);
             
             // functions
-            void shoot(Character *enemy);
+            void shoot(Character *tmp);
             bool hasboolets();
             void reload();
+            void attack(Character *enemy) override;
 
-        
+
     };
 }
