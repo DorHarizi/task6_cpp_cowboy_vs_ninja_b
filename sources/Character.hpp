@@ -22,6 +22,7 @@ namespace ariel{
             string getName();
             Point getLocation();
             bool getInTeam();
+            int getNumOfHit();
             void setName(string name);
             void setLocation(Point location);
             void setInTeam(bool tmp);

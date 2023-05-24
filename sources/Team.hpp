@@ -15,11 +15,9 @@
 
  namespace ariel{
      class Team{
-         private:
-             vector<Character *> team;
-             Character *leader;
-
          public:
+            vector<Character *> team;
+            Character *leader;
             Team(Character *leader);
             void findNewLeader();
             void findNewVictim(Character **victim, Team *enemyTeam);

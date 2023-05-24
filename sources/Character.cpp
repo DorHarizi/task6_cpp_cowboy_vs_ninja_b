@@ -22,6 +22,10 @@ Point Character::getLocation(){
     return this->location;
 }
 
+int Character::getNumOfHit() {
+    return this->numOfHit;
+ }
+
 void Character::setName(string name){
     this->name = name;
 }

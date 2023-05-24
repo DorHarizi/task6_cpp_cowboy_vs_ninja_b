@@ -5,9 +5,9 @@ using namespace std;
 using namespace ariel;
 
 namespace ariel {
-    class Team2 : public Team {
+    class SmartTeam : public Team {
         public:
-            Team2(Character *leader);
+            SmartTeam(Character *leader);
 
             void findNewLeader();
 
@@ -15,6 +15,5 @@ namespace ariel {
 
             void attack(Team *enemyTeam);
 
-        };
+    };
 }
-
