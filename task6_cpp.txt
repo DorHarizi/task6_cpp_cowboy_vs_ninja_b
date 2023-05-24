@@ -1,3 +1,3 @@
 https://github.com/DorHarizi/task6_cpp_cowboy_vs_ninja_b
-fc7268e
+3b899b4
 205890882
